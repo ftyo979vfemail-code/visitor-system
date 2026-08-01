@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 # ضع رابط Webhook الخاص بـ n8n هنا
-N8N_WEBHOOK_URL = "https://yyyyy.app.n8n.cloud/webhook-test/visitor-register"
+N8N_WEBHOOK_URL = "https://ryyyyy.app.n8n.cloud/webhook-test/visitor-register"
 
 
 @app.route("/", methods=["GET", "POST"])
