@@ -12,9 +12,12 @@ def home():
         apartment = request.form.get("apartment")
         reason = request.form.get("reason")
 
-        message = f"تم تسجيل الزائر {visitor_name} بنجاح"
+        print("اسم الزائر:", visitor_name)
+        print("رقم الهاتف:", phone)
+        print("رقم الشقة:", apartment)
+        print("سبب الزيارة:", reason)
 
-        print(visitor_name, phone, apartment, reason)
+        message = f"تم تسجيل الزائر {visitor_name} بنجاح"
 
     return render_template("index.html", message=message)
 
